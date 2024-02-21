@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - func
  * puts - print
  * Return: zero
