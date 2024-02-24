@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 /*
- * main - func
+ * main - func main for
  * description: compares
  * Return: 0
 */
