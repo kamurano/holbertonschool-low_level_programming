@@ -1,4 +1,4 @@
-#define < stdio.h >
+#include <stdio.h>
 /**
  * main - func
  * Description: main func
