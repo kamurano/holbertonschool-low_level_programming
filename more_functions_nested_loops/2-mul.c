@@ -6,7 +6,7 @@
  * @b: var2
  * Return: zero
 */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	return(a * b);
 }
