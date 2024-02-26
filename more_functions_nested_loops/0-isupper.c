@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - func
- * Description - test
+ * _isupper - func
+ * c: varable
  * Return: zero
 */
 int _isupper(int c)
