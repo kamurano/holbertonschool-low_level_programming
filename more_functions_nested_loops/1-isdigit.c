@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _isdigit - func
- * @c - var
+ * @c: var
  * Return: zero
 */
 int _isdigit(int c)
