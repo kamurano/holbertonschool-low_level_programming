@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _isupper - func
- * c: varable
+ * @c: varable
  * Return: zero
 */
 int _isupper(int c)
