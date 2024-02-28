@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 /**
  * main - func
 */
@@ -16,6 +16,9 @@ void main(void)
 			printf("Buzz");
 		else
 			printf("%d", a);
+		if (a != 100)
+			putchar(' ');
 	}
+	putchar('\n')
 
 }
