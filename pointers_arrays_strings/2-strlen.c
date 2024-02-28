@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strlen - func
- * @s: pointer
- * Return: zero
-*/
+ * _strlen - length of string
+ * @s: variable
+ * Return: integer
+ */
 int _strlen(char *s)
 {
 	int a;
 
 	a = strlen(s);
-	return(a);
+	return (a);
 }
