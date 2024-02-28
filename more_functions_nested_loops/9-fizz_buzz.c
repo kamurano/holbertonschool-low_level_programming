@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - func
+ * Return: zero
 */
-void main(void)
+int main(void)
 {
 	int a;
 
@@ -20,5 +21,5 @@ void main(void)
 			putchar(' ');
 	}
 	putchar('\n');
-
+	return (0);
 }
