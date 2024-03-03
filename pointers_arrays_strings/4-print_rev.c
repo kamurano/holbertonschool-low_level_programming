@@ -1,22 +1,23 @@
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
 /**
- * print_rev - func
+ * print_rev - Entry point
+ *
  * @s: variable
-*/
+ * Return: Always 0.
+ */
 void print_rev(char *s)
 {
-	int i;
-	char *p = s;
+	char *p = s, *i;
 
-	while(*p != '\0')
+	while (*p != '\0')
 		p++;
-	for (i = p - s - 1; s[i] != s[0]; i--)
-		_putchar(s[i]);
-	if (p > 2)
+	s--;
+	p--;
+	for (i = p; i != s; i--)
 	{
-		_putchar(s[0]);
-		_putchar('\n');
+		_putchar(*i);
 	}
+	_putchar('\n');
 }
