@@ -15,18 +15,23 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		size1 = 0;
+	else
+	{
+		while(s1[i] != '\0')
+        	{
+                	size1++;
+                	i++;
+        	}
+	}
 	if (s2 == NULL)
 		size2 = 0;
-	while(s1[i] != '\0')
+	else
 	{
-		size1++;
-		i++;
-	}
-	i = 0;
-	while(s2[i] != '\0')
-	{
-		size2++;
-		i++;
+		while(s2[i] != '\0')
+		{
+			size2++;
+			i++;
+		}
 	}
 	buf = malloc(sizeof(char) * (size1 + size2) + 1);
 	if (buf == NULL)
