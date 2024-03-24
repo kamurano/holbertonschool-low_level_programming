@@ -1,19 +1,20 @@
-section .data
-    helloMessage db 'Hello, World', 10 ; 'Hello, World' with a newline character at the end
-    len equ $ - helloMessage             ; Calculate the length of the helloMessage string
+global main
 
 section .text
-    global _start
+main:
+	push rbp
+	mov rbp, rsp
+	mov rdi, 0x1
+	mov rsi, msg
+	mov rdx, len
+	mov rax, 0x1
+	syscall
+	xor rdi, rdi
+	mov rax, 0x0
+	pop rbp
+	ret
 
-_start:
-    ; Write system call
-    mov rax, 1              ; system call number for write
-    mov rdi, 1              ; file descriptor 1 is stdout
-    mov rsi, helloMessage  ; address of the string to output
-    mov rdx, len            ; number of bytes to write
-    syscall                ; invoke system call
 
-    ; Exit system call
-    mov rax, 60             ; system call number for exit
-    xor rdi, rdi            ; status 0
-    syscall                ; invoke system call
+section .data
+	msg db 'Hello, World', 10
+	len EQU $ - msg
